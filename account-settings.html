@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="resource/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resource/myresource/my.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Playfair+Display" rel="stylesheet">
+    <style>
+        #sign-in-btn-registerpage {
+            float: right;
+        }
+
+        #create-btn {
+            font-family: 'Playfair Display', serif;
+            font-family: 'Lora', serif;
+            font-size: 2vw;
+            /* font-size: 2.5em; */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-inverse navbar-fixed-top" style="padding-right:15px;">
+            <!-- <div class="container-fluid"> -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse1">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img class="img-responsive" src="resource/images/logo.png" alt="Home">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">View all courses
+                        </a>
+                    </li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- </div> -->
+            <!-- create dropdown hoverable here -->
+
+        </nav>
+        <div class="page-content">
+            <div class="container">
+                <div class="row content-heading">
+                    <div class="col-xs-3">
+                        <h4 style="width:auto; font-family: Times New Roman, Times, serif;">Account Settings</h4>
+
+                    </div>
+                </div>
+                <!-- Start form area. -->
+                <div id="contact-form"style="height:auto; ">
+                    <div class="col-sm-7" style="padding:30px;height:auto;">
+
+                        <h3 style="width:60%; margin:auto;margin-bottom:40px;text-align:center;">Update Profile</h3>
+                        <form  class="form-horizontal" action="/action_page.php">
+
+
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="user-name">User name:</label>
+                                <div class="col-sm-10">
+                                    <input disabled value="diiabibantia123" type="text" class="form-control" id="user_name" placeholder="User name" name="user_name">
+                                    <span style="color:rgb(219, 92, 18)" class="form-input-reccomend">You can not change your Username. </span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="email">Email:</label>
+                                <div class="col-sm-10">
+                                    <input value="abc@gmail.com" type="email" class="form-control" id="email" placeholder="username@domain.com" name="email">
+                                    <!-- <span class="form-input-reccomend">You should fuck her. </span> -->
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label class="control-label col-sm-2" for="full-name">Full name:</label>
+                                <div class="col-sm-10">
+                                    <input value="Nguyen Van A" type="text" class="form-control" id="full_name" placeholder="Nguyen Van A" name="full_name">
+                                    <span class="form-input-reccomend">Your legal name, used for any certificate you earn.</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+
+                                <label class="control-label col-sm-2" for="date_of_birth">Date of birth:</label>
+                                <div class="col-sm-10">
+                                    <input value="2014-02-09" type="date" class="form-control" id="date_of_birth" name="date_of_birth">
+                                    <span class="form-input-reccomend">This field is optional. But we reccomend you use the real date of birth for certificating
+                                        purposes. </span>
+                                </div>
+                            </div>
+                           
+<!-- 
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="pwd">Password:</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="pwd">Confirm:</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="confirm_pwd" placeholder="Confirm password" name="confirm_pwd" required>
+                                </div>
+                            </div> -->
+
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button id="contact-btn" type="submit" class="btn btn-primary col-xs-11">Update</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <!-- change password -->
+                    <div class="col-sm-5" style="padding:30px;height:auto;">
+
+                        <h3 style="width:60%; margin:auto;margin-bottom:40px;text-align:center;">Change Password</h3>
+                        <form id="change-password-form" class="form-horizontal" action="/action_page.php">
+
+                          
+                         
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="pwd">Old:</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="oldpwd" placeholder="Enter password" name="oldpwd">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="pwd">New:</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="pwd">Confirm:</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="confirm_pwd" placeholder="Confirm password" name="confirm_pwd">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button id="contact-btn" type="submit" class="btn btn-primary col-xs-11">Update</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <!-- change password -->
+
+
+                </div>
+            </div>
+            <!-- End form area. -->
+
+        </div>
+        <footer class="footer-copyright">
+            <div class="copyright">
+                <div class="container">
+                    <div class="col-md-6">
+                        <p>
+                            <span class="glyphicon glyphicon-copyright-mark"></span>Luong Van Thuan- November 2017.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="bottom_ul">
+                            <li>
+                                <a href="#">site.com</a>
+                            </li>
+                            <li>
+                                <a href="#">About us</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Contact us</a>
+                            </li>
+                            <li>
+                                <a href="#">Site Map</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script src="resource/jQuery.js"></script>
+
+    <script src="resource/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="resource/myresource/my.js"></script>
+    <script src='resource/bootstrapValidator.js'></script>
+    <script type="text/javascript" src="resource/myresource/validator.js"></script>
+</body>
+
+
+
+hahaheheh
+
+</html>

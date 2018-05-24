@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="resource/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resource/myresource/my.css">
+
+
+
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-inverse navbar-fixed-top" style="padding-right:15px;">
+            <!-- <div class="container-fluid"> -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse1">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img class="img-responsive" src="resource/images/logo.png" alt="Home">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">View all courses
+                        </a>
+
+                    </li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- </div> -->
+            <!-- create dropdown hoverable here -->
+
+        </nav>
+        <div class="page-content">
+            <div class="container">
+                <div class="row content-heading">
+                    <h2 style="font-family: Times New Roman, Times, serif;">Chỉnh sửa khóa học</h2>
+                </div>
+                <form class="form-horizontal" action="/action_page.php">
+                    <div class="form-group">
+                        <!-- Chinh anh dai dien -->
+                        <div>
+                            <img style="margin:10px;width: 150;height: 110px;" align="left" src="resource/images/COURSE-IMG/Excel.jpg" alt="Lights" style="width:100%">
+                            <div style="float:left;">
+                                <label for="inputdefault">Đường dẫn tới ảnh</label>
+                                <div class="input-group">
+                                    <input class="form-control" id="input-img" placeholder="http://pik.vn/sample.jpg" type="text">
+                                    <!-- <button class="btn btn-default" type="submit">
+                                        Cập nhật ảnh
+                                    </button> -->
+                                </div>
+                        
+                            </div>
+                        </div>
+                        <!-- Chinh anh dai dien -->
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="course-name">Course name:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="course-name" placeholder="Nhập tên khóa học" name="course-name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="intro">Introduction:</label>
+                        <!-- <div class="col-sm-10">
+                            <input type="text" class="form-control" id="pwd" placeholder="Giới thiệu về khóa học" name="pwd">
+                        </div> -->
+                            <textarea class="form-control" rows="5" id="intro" placeholder="Giới thiệu về khóa học"></textarea>
+                    </div>
+                   
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default">Cập nhật</button>
+                        </div>
+                    </div>
+                </form>
+              
+
+
+
+
+
+            </div>
+            <footer class="footer-copyright">
+                <div class="copyright">
+                    <div class="container">
+                        <div class="col-md-6">
+                            <p>
+                                <span class="glyphicon glyphicon-copyright-mark"></span>Luong Van Thuan- November 2017.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="bottom_ul">
+                                <li>
+                                    <a href="#">site.com</a>
+                                </li>
+                                <li>
+                                    <a href="#">About us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Contact us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Site Map</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+
+        <script src="resource/jQuery.js"></script>
+
+        <script src="resource/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <script src="resource/myresource/my.js"></script>
+
+</body>
+
+</html>

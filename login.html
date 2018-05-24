@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="resource/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resource/myresource/my.css">
+
+
+    <link rel="stylesheet" href="resource/myresource/login-form.css">
+    <style>
+        #sign-in-btn-registerpage {
+            float: right;
+        }
+
+     
+        /* Login form */
+        /* End Login form */
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-inverse navbar-fixed-top" style="padding-right:15px;">
+            <!-- <div class="container-fluid"> -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse1">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img class="img-responsive" src="resource/images/logo.png" alt="Home">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">View all courses
+                        </a>
+                    </li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- </div> -->
+            <!-- create dropdown hoverable here -->
+
+        </nav>
+        <div class="page-content">
+            <div class="container">
+                <div class="row content-heading">
+                    <div class="col-xs-3">
+                        <h4 style="width:50px; font-family: Times New Roman, Times, serif;">REGISTER</h4>
+
+                    </div>
+                    <button id="sign-in-btn-registerpage" type="button" class="btn btn-primary">Sign in</button>
+                </div>
+                <!-- Start log in area. -->
+                <div class="container" style="margin-bottom:60px;">
+
+
+                    <div class="omb_login">
+                        <h3 class="omb_authTitle">Login or
+                            <a href="#">Sign up</a>
+                        </h3>
+                        <div class="row omb_row-sm-offset-3 omb_socialButtons">
+                            <div class="col-xs-6 col-sm-3">
+                                <a href="#" class="btn btn-lg btn-block omb_btn-facebook">
+                                    <i class="fa fa-facebook visible-xs"></i>
+                                    <span class="hidden-xs">Facebook</span>
+                                </a>
+                            </div>
+                          
+                            <div class="col-xs-6 col-sm-3">
+                                <a href="#" class="btn btn-lg btn-block omb_btn-google">
+                                    <i class="fa fa-google-plus visible-xs"></i>
+                                    <span class="hidden-xs">Google+</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row omb_row-sm-offset-3 omb_loginOr">
+                            <div class="col-xs-12 col-sm-6">
+                                <hr class="omb_hrOr">
+                                <span class="omb_spanOr"></span>
+                            </div>
+                        </div>
+
+                        <div class="row omb_row-sm-offset-3">
+                            <div class="col-xs-12 col-sm-6">
+                                <form class="omb_loginForm" action="" autocomplete="off" method="POST">
+                                    <div class="input-group">
+                                        <span class="input-group-addon glyphicon glyphicon-user"></span>
+                                        <input type="text" class="form-control" name="username" placeholder="email address">
+                                    </div>
+                                    <span class="help-block"></span>
+
+                                    <div class="input-group">
+                                        <span class="input-group-addon glyphicon glyphicon-lock"></span>
+                                        <input type="password" class="form-control" name="password" placeholder="Password">
+                                    </div>
+                                    <span class="help-block">Password error</span>
+
+                                    <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row omb_row-sm-offset-3">
+                            <div class="col-xs-12 col-sm-3">
+                                <label class="checkbox">
+                                    <input type="checkbox" value="remember-me">Remember Me
+                                </label>
+                            </div>
+                            <div class="col-xs-12 col-sm-3">
+                                <p class="omb_forgotPwd">
+                                    <a href="#">Forgot password?</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <!-- End log in area. -->
+
+            </div>
+            <footer class="footer-copyright">
+                <div class="copyright">
+                    <div class="container">
+                        <div class="col-md-6">
+                            <p>
+                                <span class="glyphicon glyphicon-copyright-mark"></span>Luong Van Thuan- November 2017.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="bottom_ul">
+                                <li>
+                                    <a href="#">site.com</a>
+                                </li>
+                                <li>
+                                    <a href="#">About us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Contact us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Site Map</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+
+        <script src="resource/jQuery.js"></script>
+
+        <script src="resource/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <script src="resource/myresource/my.js"></script>
+</body>
+
+
+
+</html>
